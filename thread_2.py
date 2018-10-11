@@ -14,7 +14,7 @@ class MyThread(threading.Thread):
 
 for msg in ['you', 'need', 'python']:
     t = MyThread(msg)
-    t.start()
+    t.start()    # when run start method, it will automatically execute run method of class Mythread.
 
 for i in range(100):
     time.sleep(0.1)
